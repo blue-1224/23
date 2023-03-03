@@ -1,0 +1,42 @@
+<!doctype.html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2023_23</title>  
+        <style>
+			div { text-align: center;}
+            body { margin: 0; padding: 0; 
+                   width: 100%; overflow-x:hidden; }
+            img {                
+                max-width: 100%;
+                height: auto;       
+                pointer-events: none;         
+                }
+            img[usemap] {pointer-events: auto;}
+                @media (max-width:720px) {img {width: 100%;}}
+            
+		</style>    
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+           <script>
+           $(document).ready(function() {
+               $('img[usemap]').rwdImageMaps();
+           });
+           </script>
+    </head>
+
+    <body>
+        <div>
+          <img src="2302_ADCB_신학기_U+멤버스_이벤트상세_김광옥.jpg" alt="Image" 
+          usemap="#버튼">
+          <map name="버튼" id="버튼">
+            <area shape="rect" alt="응모하기" title="응모하기" 
+            coords="46,2085,672,2224" href="https://www.lguplus.com/" target="_self">
+            <area shape="rect" alt="지불방법 설정" title="지불방법 설정" 
+            coords="46,2688,672,2821" href="https://namu.wiki/w/LG%20U%2B" target="_self">
+          </map>
+        </div>
+      </body>
+
+</html>
